@@ -293,6 +293,7 @@ class EstimatorBase(with_metaclass(ABCMeta, object)):  # pylint: disable=too-man
         use_spot_instances = renamed_kwargs(
             "train_use_spot_instances", "use_spot_instances", use_spot_instances, kwargs
         )
+
         max_wait = renamed_kwargs("train_max_wait", "max_wait", max_wait, kwargs)
         volume_size = renamed_kwargs("train_volume_size", "volume_size", volume_size, kwargs)
         volume_kms_key = renamed_kwargs(
