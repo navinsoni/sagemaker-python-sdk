@@ -269,7 +269,7 @@ class EstimatorBase(with_metaclass(ABCMeta, object)):  # pylint: disable=too-man
                 the estimator's ``output_path``, unless the region does not
                 support SageMaker Debugger. To disable SageMaker Debugger
                 monitoring and profiling, set the
-                ``disable_profiler`` parameter to ``True``.
+                ``disable_profiler`` parameter to ``True``
             disable_profiler (bool): Specifies whether Debugger monitoring and profiling
                 will be disabled (default: ``False``).
             environment (dict[str, str]) : Environment variables to be set for
@@ -293,7 +293,6 @@ class EstimatorBase(with_metaclass(ABCMeta, object)):  # pylint: disable=too-man
         use_spot_instances = renamed_kwargs(
             "train_use_spot_instances", "use_spot_instances", use_spot_instances, kwargs
         )
-
         max_wait = renamed_kwargs("train_max_wait", "max_wait", max_wait, kwargs)
         volume_size = renamed_kwargs("train_volume_size", "volume_size", volume_size, kwargs)
         volume_kms_key = renamed_kwargs(
