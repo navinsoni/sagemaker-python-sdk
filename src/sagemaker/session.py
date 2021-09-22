@@ -60,6 +60,7 @@ _STATUS_CODE_TABLE = {
 class LogState(object):
     """Placeholder docstring"""
 
+
     STARTING = 1
     WAIT_IN_PROGRESS = 2
     TAILING = 3
