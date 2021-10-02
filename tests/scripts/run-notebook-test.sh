@@ -14,6 +14,7 @@ export JAVA_HOME=$(get-java-home)
 echo "set JAVA_HOME=$JAVA_HOME"
 export SAGEMAKER_ROLE_ARN=$(aws iam list-roles --output text --query "Roles[?RoleName == 'SageMakerRole'].Arn")
 echo "set SAGEMAKER_ROLE_ARN=$SAGEMAKER_ROLE_ARN"
+\
 ./runtime/bin/mead-run-nb-test \
 --instance-type ml.c4.8xlarge \
 --region us-west-2 \
