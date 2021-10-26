@@ -269,7 +269,7 @@ class EstimatorBase(with_metaclass(ABCMeta, object)):  # pylint: disable=too-man
                 the estimator's ``output_path``, unless the region does not
                 support SageMaker Debugger. To disable SageMaker Debugger
                 monitoring and profiling, set the
-                ``disable_profiler`` parameter to ``True``.
+                ``disable_profiler`` parameter to ``True``
             disable_profiler (bool): Specifies whether Debugger monitoring and profiling
                 will be disabled (default: ``False``).
             environment (dict[str, str]) : Environment variables to be set for
