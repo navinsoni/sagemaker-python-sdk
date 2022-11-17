@@ -34,7 +34,7 @@ For detailed documentation, including the API reference, see `Read the Docs <htt
 Table of Contents
 -----------------
 
-#. `Installing SageMaker Python SDK <#installing-the-sagemaker-python-sdk>`__
+#. `Installing SageMaker Python SDK  <#installing-the-sagemaker-python-sdk>`__
 #. `Using the SageMaker Python SDK <https://sagemaker.readthedocs.io/en/stable/overview.html>`__
 #. `Using MXNet <https://sagemaker.readthedocs.io/en/stable/using_mxnet.html>`__
 #. `Using TensorFlow <https://sagemaker.readthedocs.io/en/stable/using_tf.html>`__
