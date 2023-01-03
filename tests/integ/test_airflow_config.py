@@ -64,6 +64,11 @@ for _ in retries(
         break
     except ParsingError:
         pass
+    except ValueError as ve:
+        if "Unable to configure formatter" in str(ve):
+            print(f"Received: {ve}")
+        else:
+            raise ve
 
 PYTORCH_MNIST_DIR = os.path.join(DATA_DIR, "pytorch_mnist")
 PYTORCH_MNIST_SCRIPT = os.path.join(PYTORCH_MNIST_DIR, "mnist.py")
